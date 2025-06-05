@@ -6,14 +6,28 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
+  background-color: #F5F5DC; /* tom clarinho */
 }
 
+/* Degradê no topo */
+body::before {
+  content: "";
+  display: block;
+  height: 50px;
+  background: #FFAD91;
+}
+
+a {
+  text-decoration: none;  /* Remove o sublinhado */
+  color: inherit;         /* Herda a cor do texto ao redor (ou use uma cor fixa) */
+}
+
+/* Banner com imagem */
 .banner {
-  background-image: url('../assets/img/banners/banner-index.jpg'); /* troca esse nome pelo nome da imagem que tá usando */
+  background-image: url('../assets/img/banners/banner-index.jpg'); /* imagem do coral */
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,39 +35,43 @@ body {
 }
 
 .banner h1 {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.75);
   color: white;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   font-size: 2rem;
+  font-weight: bold;
 }
 
+/* Seção das categorias */
 .conteudo {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   padding: 40px 20px;
   flex-wrap: wrap;
-  background-color: #eef7fb;
-  margin-top: 70px;
+  margin-top: 0;
 }
 
+/* Estilo das categorias */
 .categoria {
   text-align: center;
   transition: transform 0.7s;
 }
 
 .categoria img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.4s ease;
 }
 
 .categoria p {
   margin-top: 10px;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .categoria:hover {
@@ -61,10 +79,11 @@ body {
 }
 
 .categoria:hover img {
-  transform: scale(1.1); 
-  box-shadow: 0 8px 12px rgba(0,0,0,0.2); 
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* Ícone do Twitter fixo */
 .twitter-link {
   position: fixed;
   bottom: 20px;
@@ -80,4 +99,59 @@ body {
 
 .twitter-icon:hover {
   transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 250px;
+  }
+
+  .banner h1 {
+    font-size: 1.5rem;
+    padding: 8px 16px;
+  }
+
+  .categoria img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .categoria p {
+    font-size: 1rem;
+  }
+
+  .twitter-icon {
+    width: 60px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 180px;
+  }
+
+  .banner h1 {
+    font-size: 1.2rem;
+    padding: 6px 12px;
+  }
+
+  .conteudo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categoria img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .categoria p {
+    font-size: 0.95rem;
+  }
+
+  .twitter-icon {
+    width: 50px;
+    height: 40px;
+  }
 }

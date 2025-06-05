@@ -4,62 +4,56 @@
     box-sizing: border-box;
 }
 
-/* Estilos gerais */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #D0E5FF;
-    color: #000000;
-    margin: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #F5F5DC; /* tom clarinho */
 }
 
-header h1 {
-    margin-bottom: 10px;
+header {
+  background-color: #FFAD91;
+  padding: 13px;
 }
 
-nav ul {
-    list-style: none;
+nav a {
+  font-size: 1.3rem;
+  color: #5b4200;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 15px;
+/* Estilo específico para páginas de conteúdo biológico */
+.conteudo-equino {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 20px;
+  flex-wrap: wrap;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.imagem-bio {
+  width: 300px;
+  max-width: 90%;
+  height: auto;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.texto-bio h1 {
+  font-size: 3rem;
+  color: #ff4500;
+  font-family: Georgia, serif;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-/* Seções */
-main {
-    margin-top: 20px;
+.box {
+  background-color: #ffeccc;
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-section {
-    margin-bottom: 20px;
-}
-
-section h2 {
-    color: #004d40;
-    margin-bottom: 10px;
-}
-
-section ul {
-    list-style-type: square;
-    margin-left: 20px;
-}
-
-/* Rodapé */
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #004d40;
-    color: white;
+.box p {
+  margin-bottom: 15px;
+  text-align: justify;
 }
