@@ -7,9 +7,9 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -73,6 +73,21 @@ nav a:hover {
   text-align: justify;
 }
 
+.box-secundary {
+  margin-top: 100px;
+  background-color: #ffeccc;
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 1750px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.box-secundary p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
 @media (max-width: 768px) {
   .conteudo-equino {
     flex-direction: column;
@@ -92,7 +107,7 @@ nav a:hover {
     text-align: center;
   }
 
-  .box {
+  .box, .box-secundary {
     padding: 20px;
     font-size: 1.2rem;
     max-width: 100%;
@@ -108,7 +123,7 @@ nav a:hover {
     font-size: 2.2rem;
   }
 
-  .box {
+  .box, .box-secundary {
     font-size: 1rem;
   }
 
