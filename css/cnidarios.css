@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 
 .italiana-regular {
   font-family: "Italiana", sans-serif;
@@ -14,11 +14,11 @@
 
 body {
   /* font-family: Arial, sans-serif; */
-  background-color: #F5F5DC; /* tom clarinho */
+  background-color: #f5f5dc; /* tom clarinho */
 }
 
 header {
-  background-color: #FFAD91;
+  background-color: #ffad91;
   padding: 13px;
 }
 
@@ -50,6 +50,28 @@ nav a:hover {
 .imagem-bio {
   max-width: 700px;
   height: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.imagem {
+  width: 500px; /* tamanho fixo pra imagem */
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.polipo {
+  position: absolute;
+  right: 0;
+  max-width: 600px;
 }
 
 .texto-bio h1 {
@@ -107,7 +129,8 @@ nav a:hover {
     text-align: center;
   }
 
-  .box, .box-secundary {
+  .box,
+  .box-secundary {
     padding: 20px;
     font-size: 1.2rem;
     max-width: 100%;
@@ -123,7 +146,8 @@ nav a:hover {
     font-size: 2.2rem;
   }
 
-  .box, .box-secundary {
+  .box,
+  .box-secundary {
     font-size: 1rem;
   }
 
