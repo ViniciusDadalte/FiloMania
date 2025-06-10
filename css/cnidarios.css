@@ -60,18 +60,23 @@ nav a:hover {
 }
 
 .imagem {
-  width: 500px; /* tamanho fixo pra imagem */
-}
-
-img {
-  width: 100%;
-  height: auto;
+  width: 700px; /* tamanho fixo pra imagem */
+  display: flex;
 }
 
 .polipo {
-  position: absolute;
-  right: 0;
-  max-width: 600px;
+  flex-direction: row;
+  height: 700px;
+  width: 1000px;
+}
+
+.imagem-dois {
+  text-align: center;
+}
+
+.polipo-dois {
+  margin: auto;
+  display: block;
 }
 
 .texto-bio h1 {
@@ -79,6 +84,12 @@ img {
   color: #ff4500;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.section-de-baixo-da-imagem h1 {
+  font-size: 5rem;
+  color: #ff4500;
+  margin-bottom: 20px;
 }
 
 .box {
@@ -96,7 +107,6 @@ img {
 }
 
 .box-secundary {
-  margin-top: 100px;
   background-color: #ffeccc;
   border-radius: 20px;
   padding: 25px;
